@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Bitcoin Average [USD]",
-  "description": "Displays the last USD index price from BitcoinAverage.com",
-  "homepage_url": "https://github.com/rcd/BitcoinAverage",
+  "name": "Bitso ticker",
+  "description": "Muestra el ultimo precio de bitcoin en Bitso",
+  "homepage_url": "https://github.com/manuelfr51/BitcoinAverage",
   "version": "0.0.1",
   "permissions": ["alarms"],
   "background": {
