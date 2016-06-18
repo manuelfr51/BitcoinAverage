@@ -11,17 +11,12 @@ function updateTicker() {
     if (xhr.readyState == 4) {
       var ticker = JSON.parse(xhr.responseText);
       chrome.browserAction.setBadgeText({ text: '+/-' });
+      chrome.browserAction.setTitle({ text: '' + Math.floor(ticker['last']) });
       var bg = color_up;
       if (ticker['last'] >= ticker['vwap'])
         bg = color_down;
       chrome.browserAction.setBadgeBackgroundColor({ color: bg });
     }
-    
-    if (xhr.readyState == 4) {
-      var ticker = JSON.parse(xhr.responseText);
-      chrome.browserAction.setTitle({ text: '' + Math.floor(ticker['last']) });
-    }
-    
   }
   xhr.send();
 }
